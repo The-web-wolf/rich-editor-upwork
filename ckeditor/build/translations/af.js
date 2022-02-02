@@ -1,1 +1,1 @@
-!function(n){const o=n.af=n.af||{};o.dictionary=Object.assign(o.dictionary||{},{"%0 of %1":"","Show more items":""}),o.getPluralForm=function(n){return 1!=n}}(window.CKEDITOR_TRANSLATIONS||(window.CKEDITOR_TRANSLATIONS={}));
+!function(n){const e=n.af=n.af||{};e.dictionary=Object.assign(e.dictionary||{},{"%0 of %1":"",Bold:"Vetgedruk",Italic:"Skuinsgedruk","Show more items":"",Underline:"Onderstreep"}),e.getPluralForm=function(n){return 1!=n}}(window.CKEDITOR_TRANSLATIONS||(window.CKEDITOR_TRANSLATIONS={}));

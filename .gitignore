@@ -21,7 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-/ckeditor/node_modules
-/ckeditor/sample
-/ckeditor/src

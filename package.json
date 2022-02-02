@@ -3,6 +3,7 @@
   "version": "0.3.0",
   "private": true,
   "dependencies": {
+    "@ckeditor/ckeditor5-basic-styles": "^32.0.0",
     "@ckeditor/ckeditor5-react": "^3.0.3",
     "ckeditor5-custom-build": "file:ckeditor",
     "react": "^17.0.2",

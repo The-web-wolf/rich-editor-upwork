@@ -12,7 +12,9 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import HeadingButtonsUI from '@ckeditor/ckeditor5-heading/src/headingbuttonsui';
 import ParagraphButtonUI from '@ckeditor/ckeditor5-paragraph/src/paragraphbuttonui';
-
+import Bold from "@ckeditor/ckeditor5-basic-styles/src/bold.js";
+import Italic from "@ckeditor/ckeditor5-basic-styles/src/italic.js";
+import Underline from "@ckeditor/ckeditor5-basic-styles/src/underline.js"
 
 class Editor extends ClassicEditor {}
 
@@ -26,7 +28,10 @@ Editor.builtinPlugins = [
 	PasteFromOffice,
 	TextTransformation,
 	HeadingButtonsUI,
-	ParagraphButtonUI
+	ParagraphButtonUI,
+	Bold,
+	Italic,
+	Underline
 ];
 
 // Editor configuration.
@@ -41,6 +46,10 @@ Editor.defaultConfig = {
 			'heading4',
 			'heading5',
 			'heading6',
+			'|',
+			'bold',
+			'italic',
+			'underline',
 			'|',
 			'bulletedList',
 			'numberedList',
