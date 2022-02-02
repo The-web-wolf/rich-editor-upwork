@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useEffect, useState } from "react";
+import TextEditor from "./TextEditor.js";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [textData, setTextData] = useState("Type here...");
+
+    const handleTextChange = (newData) => {
+        setTextData(newData);
+    };
+
+    const extraProps = {
+      disabled : false, // true or false
+    }
+
+    useEffect(() => {
+      console.log(textData); // do something when data changes :)
+    }, [textData]);
+
+    return (
+        <div className="app">
+            <TextEditor 
+              data={textData} 
+              onEditorReady={ () => console.log("Editor is ready")} // can write some function here if you need :)
+              onChangeData={handleTextChange}
+              {...extraProps}
+            />
+        </div>
+    );
 }
 
 export default App;
