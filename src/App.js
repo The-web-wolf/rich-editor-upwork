@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TextEditor from "./TextEditor.js";
+import TextEditor from "./draft.js";
 function App() {
     const [textData, setTextData] = useState("Type here...");
 
